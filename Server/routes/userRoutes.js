@@ -5,7 +5,7 @@ const {
   validateUserMiddleware,
 } = require("../middlewares/validateUserMiddleware");
 //controller
-const userController = require("../controllers/UserController");
+const userController = require("../controllers/userController");
 
 router.use(validateUserMiddleware);
 
