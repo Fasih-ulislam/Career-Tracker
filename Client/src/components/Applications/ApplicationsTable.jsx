@@ -61,7 +61,7 @@ const ApplicationsTable = ({ appData, setAppData, dashboardData }) => {
         </div>
         <button
           onClick={() => setShowAddApplication(true)}
-          className="bg-green-500 text-white font-medium rounded-sm px-3 py-2 cursor-pointer hover:bg-green-400 hover:shadow-2xs flex items-center gap-2"
+          className="bg-green-500 text-white font-medium rounded-sm px-3 py-2 cursor-pointer hover:bg-green-400 hover:shadow-2xs flex items-center gap-2 "
         >
           Add Application
           <Plus className="size-5" />
@@ -70,8 +70,8 @@ const ApplicationsTable = ({ appData, setAppData, dashboardData }) => {
 
       {/* Table Section */}
       {appData.length > 0 ? (
-        <div className="w-full overflow-x-auto">
-          <table className="min-w-[800px] w-full">
+        <div className="w-full ">
+          <table className="min-w-[800px] w-full ">
             <thead>
               <tr>
                 {headers.map((head) => (
