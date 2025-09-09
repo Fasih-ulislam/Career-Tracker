@@ -41,6 +41,16 @@ const ProtectedNavbar = ({ user, avatar, setLogout, logout }) => {
         >
           Resumes
         </NavLink>
+        <NavLink
+          to="/protected/chat"
+          className={({ isActive }) =>
+            `text-white hover:font-black transition-all duration-150 ease-in-out ${
+              isActive ? "font-black" : "font-medium"
+            }`
+          }
+        >
+          Chat
+        </NavLink>
       </div>
       <div className="hidden sm:flex items-center gap-1.5">
         <button

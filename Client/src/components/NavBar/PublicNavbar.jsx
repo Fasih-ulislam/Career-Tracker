@@ -16,7 +16,9 @@ const PublicNavbar = () => {
         <p className="text-2xl font-medium text-gray-700">Career Tracker</p>
       </NavLink>
       <div className="hidden sm:flex items-center gap-1.5">
-        <NavLink className="text-gray-700 font-medium">About</NavLink>
+        <NavLink to={"/about"} className="text-gray-700 font-medium">
+          About
+        </NavLink>
         <NavLink
           to="/auth"
           className="bg-blue-500 text-white font-medium rounded-sm p-2 cursor-pointer hover:bg-[#3F90F5] hover:shadow-2xs"

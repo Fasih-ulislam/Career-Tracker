@@ -20,7 +20,7 @@ const ApplicationDetails = ({ appData }) => {
   let getResume = async () => {
     if (appData.resumeUsed) {
       axios
-        .get(`${baseUrl}/protected/resume/${appData.resumeUsed}`, {
+        .get(`${baseUrl}/api/protected/resume/${appData.resumeUsed}`, {
           withCredentials: true,
         })
         .then((res) => {

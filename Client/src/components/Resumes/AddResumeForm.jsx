@@ -45,7 +45,7 @@ const AddResumeForm = ({ setView, reload }) => {
     formData.append("resume", data.resume);
 
     axios
-      .post(`${baseUrl}/protected/resume`, formData, {
+      .post(`${baseUrl}/api/protected/resume`, formData, {
         withCredentials: true,
       })
       .then((res) => {

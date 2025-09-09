@@ -5,7 +5,7 @@ import { toast, Flip } from "react-toastify";
 const deleteResume = async (resId, reload) => {
   const baseUrl = import.meta.env.VITE_BASE_URL;
   axios
-    .delete(`${baseUrl}/protected/resume/${resId}`, {
+    .delete(`${baseUrl}/api/protected/resume/${resId}`, {
       withCredentials: true,
     })
     .then((res) => {

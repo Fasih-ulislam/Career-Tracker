@@ -24,7 +24,7 @@ const Applications = () => {
 
   let getApplications = async () => {
     axios
-      .get(`${baseUrl}/protected/application`, {
+      .get(`${baseUrl}/api/protected/application`, {
         withCredentials: true,
       })
       .then((res) => {
@@ -37,7 +37,7 @@ const Applications = () => {
 
   const dashboardData = async () => {
     await axios
-      .get(`${baseUrl}/protected/application/dashboard-summary`, {
+      .get(`${baseUrl}/api/protected/application/dashboard-summary`, {
         withCredentials: true,
       })
       .then((res) => {
@@ -135,10 +135,10 @@ const Applications = () => {
             Track and manage all your job applications in one place.
           </p>
         </div>
-        <button className="bg-blue-500 text-white font-medium rounded-sm px-3 py-2 cursor-pointer hover:bg-[#3F90F5] hover:shadow-2xs flex items-center gap-2">
+        {/* <button className="bg-blue-500 text-white font-medium rounded-sm px-3 py-2 cursor-pointer hover:bg-[#3F90F5] hover:shadow-2xs flex items-center gap-2">
           Export
           <Download className="size-5" />
-        </button>
+        </button> */}
       </div>
 
       {/* Stat Cards Section */}

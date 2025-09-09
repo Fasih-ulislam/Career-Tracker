@@ -5,7 +5,7 @@ import { toast, Flip } from "react-toastify";
 const updateApplication = async (application, appId, updateRow) => {
   const baseUrl = import.meta.env.VITE_BASE_URL;
   axios
-    .put(`${baseUrl}/protected/application/${appId}`, application, {
+    .put(`${baseUrl}/api/protected/application/${appId}`, application, {
       withCredentials: true,
     })
     .then((res) => {

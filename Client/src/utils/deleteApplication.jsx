@@ -5,7 +5,7 @@ import { toast, Flip } from "react-toastify";
 const deleteApplication = async (appId, deleteRow) => {
   const baseUrl = import.meta.env.VITE_BASE_URL;
   axios
-    .delete(`${baseUrl}/protected/application/${appId}`, {
+    .delete(`${baseUrl}/api/protected/application/${appId}`, {
       withCredentials: true,
     })
     .then((res) => {

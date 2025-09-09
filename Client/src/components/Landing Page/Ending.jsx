@@ -51,7 +51,7 @@ const Ending = () => {
           viewport={{ amount: 0.7, once: true }}
         >
           <button
-            onClick={() => navigator("/")}
+            onClick={() => navigator("/about")}
             className="bg-transparent border text-[18px] border-gray-700 text-gray-700 font-medium rounded-sm p-2 cursor-pointer hover:bg-green-300 hover:shadow-2xs"
           >
             About

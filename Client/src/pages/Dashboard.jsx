@@ -20,7 +20,7 @@ const Dashboard = () => {
   useEffect(() => {
     const dashboardData = async () => {
       await axios
-        .get(`${baseUrl}/protected/application/dashboard-summary`, {
+        .get(`${baseUrl}/api/protected/application/dashboard-summary`, {
           withCredentials: true,
         })
         .then((res) => {
@@ -43,7 +43,7 @@ const Dashboard = () => {
     };
     const getActivity = async () => {
       await axios
-        .get(`${baseUrl}/protected/application/recent-activity`, {
+        .get(`${baseUrl}/api/protected/application/recent-activity`, {
           withCredentials: true,
         })
         .then((res) => {

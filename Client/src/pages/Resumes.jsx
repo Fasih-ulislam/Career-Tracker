@@ -22,7 +22,7 @@ import { set } from "react-hook-form";
 import ResumesGrid from "../components/Resumes/ResumesGrid";
 
 const Resumes = () => {
-  const location = useLocation;
+  const location = useLocation();
   const [loading, setLoading] = useState(true);
   const [summary, setSummary] = useState({});
   const navigator = useNavigate();
@@ -32,7 +32,7 @@ const Resumes = () => {
 
   let getResumes = async () => {
     axios
-      .get(`${baseUrl}/protected/resume`, {
+      .get(`${baseUrl}/api/protected/resume`, {
         withCredentials: true,
       })
       .then((res) => {
@@ -45,7 +45,7 @@ const Resumes = () => {
 
   const dashboardData = async () => {
     await axios
-      .get(`${baseUrl}/protected/resume/dashboard-summary`, {
+      .get(`${baseUrl}/api/protected/resume/dashboard-summary`, {
         withCredentials: true,
       })
       .then((res) => {

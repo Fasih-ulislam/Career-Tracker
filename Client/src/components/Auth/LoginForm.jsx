@@ -38,7 +38,9 @@ const LoginForm = ({ switchForm }) => {
 
     toast
       .promise(
-        axios.post(`${baseUrl}/auth/login`, data, { withCredentials: true }),
+        axios.post(`${baseUrl}/api/auth/login`, data, {
+          withCredentials: true,
+        }),
         {
           pending: "Logging you in",
           error: "Log in Failed",

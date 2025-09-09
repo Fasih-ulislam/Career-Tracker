@@ -6,7 +6,7 @@ import { toast, Flip } from "react-toastify";
 const logoutUser = async (navigator) => {
   const baseUrl = import.meta.env.VITE_BASE_URL;
   axios
-    .get(`${baseUrl}/auth/logout`, { withCredentials: true })
+    .get(`${baseUrl}/api/auth/logout`, { withCredentials: true })
     .then((res) => {
       toast.success(res.data, {
         position: "top-center",

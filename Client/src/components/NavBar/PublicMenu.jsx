@@ -34,10 +34,26 @@ const PublicMenu = ({ setShowNavMenu }) => {
       >
         <div className="border-gray-300 w-full flex flex-col gap-3">
           <h1 className="text-gray-700 font-black">PAGES</h1>
-          <NavLink to={"/"} className="text-gray-700 font-medium">
+          <NavLink
+            to={"/"}
+            className={({ isActive }) =>
+              `text-gray-700 hover:font-medium transition-all duration-150 ease-in-out ${
+                isActive ? "font-medium" : "font-normal"
+              }`
+            }
+          >
             Home
           </NavLink>
-          <NavLink className="text-gray-700 font-medium">About</NavLink>
+          <NavLink
+            to={"/about"}
+            className={({ isActive }) =>
+              `text-gray-700 hover:font-medium transition-all duration-150 ease-in-out ${
+                isActive ? "font-medium" : "font-normal"
+              }`
+            }
+          >
+            About
+          </NavLink>
           <NavLink
             to="/auth"
             className="bg-blue-500 text-white font-medium rounded-sm p-2 cursor-pointer hover:bg-[#3F90F5] hover:shadow-2xs"

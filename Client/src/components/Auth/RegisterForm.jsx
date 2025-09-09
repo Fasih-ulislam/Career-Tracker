@@ -57,7 +57,7 @@ const RegisterForm = ({ switchForm }) => {
     // await delay(5000);
 
     axios
-      .post(`${baseUrl}/auth/register`, data)
+      .post(`${baseUrl}/api/auth/register`, data)
       .then((res) => {
         toast.success(res.data, {
           position: "top-center",

@@ -40,7 +40,7 @@ const AddApplicationForm = ({
   const [resData, setResData] = useState([]);
   let getResumes = async () => {
     axios
-      .get(`${baseUrl}/protected/resume`, {
+      .get(`${baseUrl}/api/protected/resume`, {
         withCredentials: true,
       })
       .then((res) => {
@@ -158,7 +158,7 @@ const AddApplicationForm = ({
       );
 
       axios
-        .post(`${baseUrl}/protected/application`, cleaned, {
+        .post(`${baseUrl}/api/protected/application`, cleaned, {
           withCredentials: true,
         })
         .then((res) => {

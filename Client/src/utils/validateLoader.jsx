@@ -9,7 +9,7 @@ const validateLoader = async () => {
   const baseUrl = import.meta.env.VITE_BASE_URL;
 
   try {
-    const res = await axios.get(`${baseUrl}/auth/validate`, {
+    const res = await axios.get(`${baseUrl}/api/auth/validate`, {
       withCredentials: true,
     });
 

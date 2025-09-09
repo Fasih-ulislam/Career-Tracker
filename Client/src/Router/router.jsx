@@ -10,6 +10,7 @@ import LoadingPage from "../pages/LoadingPage";
 import UnderConstruction from "../pages/UnderConstruction";
 import Applications from "../pages/Applications";
 import Resumes from "../pages/Resumes";
+import Chat from "../pages/Chat";
 
 const router = createBrowserRouter(
   [
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
       element: <PublicLayout />,
       children: [
         { index: true, element: <LandingPage /> },
+        { path: "/about", element: <UnderConstruction /> },
         { path: "/auth", element: <AuthCard /> },
         {
           path: "*",
@@ -40,6 +42,10 @@ const router = createBrowserRouter(
         {
           path: "my-resumes",
           element: <Resumes />,
+        },
+        {
+          path: "chat",
+          element: <Chat />,
         },
       ],
     },

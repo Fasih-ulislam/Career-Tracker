@@ -18,7 +18,7 @@ const ProtectedLayout = () => {
   useEffect(() => {
     const getUserInfo = async () => {
       axios
-        .get(`${baseUrl}/protected/user/my-info`, {
+        .get(`${baseUrl}/api/protected/user/my-info`, {
           withCredentials: true,
         })
         .then((res) => {
@@ -58,7 +58,7 @@ const ProtectedLayout = () => {
         logout={logoutModal}
       />
       <div className="py-20">
-        <Outlet />
+        <Outlet context={{ user, avatar }} />
       </div>
       <AnimatePresence>
         {logoutModal && (

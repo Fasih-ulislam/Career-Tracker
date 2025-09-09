@@ -36,21 +36,43 @@ const PrivateMenu = ({ setShowNavMenu, user, setLogout, logout }) => {
           <h1 className="text-gray-700 font-black">PAGES</h1>
           <NavLink
             to={"/protected/dashboard"}
-            className="text-gray-700 font-medium"
+            className={({ isActive }) =>
+              `text-gray-700 hover:font-medium transition-all duration-150 ease-in-out ${
+                isActive ? "font-medium" : "font-normal"
+              }`
+            }
           >
             Dashboard
           </NavLink>
           <NavLink
             to={"/protected/my-applications"}
-            className="text-gray-700 font-medium"
+            className={({ isActive }) =>
+              `text-gray-700 hover:font-medium transition-all duration-150 ease-in-out ${
+                isActive ? "font-medium" : "font-normal"
+              }`
+            }
           >
             Applications
           </NavLink>
           <NavLink
             to={"/protected/my-resumes"}
-            className="text-gray-700 font-medium"
+            className={({ isActive }) =>
+              `text-gray-700 hover:font-medium transition-all duration-150 ease-in-out ${
+                isActive ? "font-medium" : "font-normal"
+              }`
+            }
           >
             Resumes
+          </NavLink>
+          <NavLink
+            to="/protected/chat"
+            className={({ isActive }) =>
+              `text-gray-700 hover:font-medium transition-all duration-150 ease-in-out ${
+                isActive ? "font-medium" : "font-normal"
+              }`
+            }
+          >
+            Chat
           </NavLink>
           <h1 className="text-gray-700 font-black">PROFILE</h1>
           <div className="pb-2 border-b border-gray-300 w-full">
