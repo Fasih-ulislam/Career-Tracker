@@ -28,7 +28,7 @@ const getAll = async (req, res, next) => {
         title: resume.title,
         createdAt: resume.createdAt,
         updatedAt: resume.updatedAt,
-        fileUrl: `${process.env.BASE_URL}${process.env.PORT}/api/protected/resume/${resume._id}/file`,
+        fileUrl: `${process.env.BASE_URL}/api/protected/resume/${resume._id}/file`,
       };
     });
 
