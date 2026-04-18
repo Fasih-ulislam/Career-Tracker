@@ -8,7 +8,7 @@ A full-stack job application tracking system built with the MERN stack. Career T
 
 ## Demo
 
-🔗 Live Demo: [Career Tracker](career-tracker-tau.vercel.app)
+🔗 Live Demo: [Career Tracker](https://career-tracker-tau.vercel.app)
 
 ## 🔗 Demo Video: [Youtube Link](https://youtu.be/kNaLIu3VhTw)
 
