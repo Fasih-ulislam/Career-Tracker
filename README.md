@@ -6,15 +6,31 @@ A full-stack job application tracking system built with the MERN stack. Career T
 
 ---
 
-## Live Demo
+## Demo
 
-🔗 [Coming Soon](#)
+🔗 Live Demo: [Career Tracker](career-tracker-tau.vercel.app)
 
----
+## 🔗 Demo Video: [Youtube Link](https://youtu.be/kNaLIu3VhTw)
 
 ## Screenshots
 
-> _Screenshots coming soon_
+![Landing Page](image.png)
+
+![Signin Page](image-1.png)
+
+![Dashboard](image-2.png)
+
+![Applications Page](image-3.png)
+
+![Add Application Page](image-4.png)
+
+![Edit Application Page](image-5.png)
+
+![Resumes Page](image-6.png)
+
+![Add Resumes Page](image-7.png)
+
+![Global Chat Page](image-8.png)
 
 ---
 
@@ -31,12 +47,14 @@ A full-stack job application tracking system built with the MERN stack. Career T
 ## Tech Stack
 
 **Frontend**
+
 - React + Vite
 - Tailwind CSS
 - Axios
 - Socket.IO Client
 
 **Backend**
+
 - Node.js + Express.js
 - MongoDB + Mongoose
 - Socket.IO
@@ -66,6 +84,7 @@ Career-Tracker/
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js v18+
 - MongoDB instance (local or Atlas)
 
@@ -112,5 +131,6 @@ npm run dev
 ## Author
 
 **Muhammad Fasih Ul Islam**
+
 - GitHub: [@Fasih-ulislam](https://github.com/Fasih-ulislam)
 - LinkedIn: [muhammad-fasih-cs](https://linkedin.com/in/muhammad-fasih-cs)
